@@ -1,0 +1,176 @@
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF7E1;
+    color: #1A1A1A;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.logo {
+    height: 40px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #00A19D;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: #FFC907;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+}
+
+.hero-img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background-color: #1A1A1A;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+/* STORY SECTION */
+.story {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+.story img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.story-text {
+    flex: 1;
+}
+
+/* WHY WATER */
+.why-water {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.stat-box {
+    background-color: #FFF7E1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.stat-box h3 {
+    color: #00A19D;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px 40px;
+    background-color: #003366;
+    color: white;
+}
+
+.cta .btn-primary {
+    background-color: #FFC907;
+    color: #1A1A1A;
+}
+
+.cta .btn-primary:hover {
+    background-color: #FFD84A;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero, .story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img, .story img {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
